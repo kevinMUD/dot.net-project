@@ -1,0 +1,37 @@
+﻿@page
+@model healthcareinsurenc.Pages.PATIENT.IndexModel
+@{
+}
+<br/>
+<h2> LIST OF pATIENTS</h2>
+<a class="btn btn-primary btn-sm" href="/PATIENT/create">New Patient</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Created</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+     <tbody>
+        @foreach(var item in Model.listpatients)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.name</td>
+                <td>@item.email</td>
+                <td>@item.phone</td>
+                <td>@item.address</td>
+                <td>@item.createdadat</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/PATIENT/Edit?id=@item.id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/PATIENT/delete?id=@item.id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

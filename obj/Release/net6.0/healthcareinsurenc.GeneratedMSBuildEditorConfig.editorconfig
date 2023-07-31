@@ -1,0 +1,97 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = healthcareinsurenc
+build_property.RootNamespace = healthcareinsurenc
+build_property.ProjectDir = D:\kevin\Documents\couses\semesta 6\dot.net\projects\healthcareinsurenc\healthcareinsurenc\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\kevin\Documents\couses\semesta 6\dot.net\projects\healthcareinsurenc\healthcareinsurenc
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/PATIENT/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEFUSUVOVFxjcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/PATIENT/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEFUSUVOVFxkZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/PATIENT/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEFUSUVOVFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/PATIENT/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUEFUSUVOVFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/RECORD/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUkVDT1JEXGNyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/RECORD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUkVDT1JEXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/specialist/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3BlY2lhbGlzdFxjcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/specialist/delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3BlY2lhbGlzdFxkZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/specialist/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3BlY2lhbGlzdFxlZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/specialist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3BlY2lhbGlzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/Users/LoggedIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9nZ2VkSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/kevin/Documents/couses/semesta 6/dot.net/projects/healthcareinsurenc/healthcareinsurenc/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-i5w8y7yr86

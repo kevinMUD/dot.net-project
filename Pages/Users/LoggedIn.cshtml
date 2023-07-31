@@ -1,0 +1,114 @@
+﻿@page
+@model EnockHealthCare.Pages.Users.LoggedInModel
+@{
+}
+
+@if (Model.user.userRole == "admin")
+{
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2>The HealthCare Assistant</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Manage
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/PATIENT/Index">Manage Patients</a>
+                            <a class="dropdown-item" href="/RECORD/Index">Manage Records</a>
+                            <a class="dropdown-item" href="/Appointment/Index">Manage Appointments</a>
+                            <a class="dropdown-item" href="/specialist/Index">Manage Specialists</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Users/Index">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+}
+else if (Model.user.userRole == "patient")
+{
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2>The HealthCare Assistant</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Manage
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/Appointment/Index?id=@Model.user.role_id">View Appointments</a>
+                            <a class="dropdown-item" href="/Records/Index?id=@Model.user.role_id">View Medical Record</a>
+                            <a class="dropdown-item" href="/Appointment/Index?id=@Model.user.role_id">Make Appointment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Users/Index">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+}
+else if (Model.user.userRole == "specialist")
+{
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2>The HealthCare Assistant</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Manage
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/Appointment/Index?id=@Model.user.role_id">View Appointments</a>
+                            <a class="dropdown-item" href="/Records/Index?id=@Model.user.role_id">Create Medical Record</a>
+                            <a class="dropdown-item" href="/Appointment/Index?id=@Model.user.role_id">Make Appointment</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Users/Index">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+}

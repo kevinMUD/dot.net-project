@@ -1,0 +1,24 @@
+﻿@page
+@model EnockHealthCare.Pages.Users.IndexModel
+@{
+}
+<form method="POST">
+    <div class="row">
+        <!-- Email input -->
+        <div class="form-outline mb-4 col-6 form-floating">
+            <label class="form-label" for="form1Example1">User Name</label>
+            <input name="name" type="text" class="form-control" placeholder="John Doe" />
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Password input -->
+        <div class="form-outline mb-4 col-6 form-floating">
+            <label class="form-label" for="form1Example2">Password</label>
+            <input name="password" type="password" class="form-control" placeholder="password" />
+        </div>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-success btn-block">Sign in</button>
+</form>

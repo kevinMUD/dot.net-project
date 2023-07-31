@@ -1,0 +1,26 @@
+﻿@page
+@using System.Data.SqlClient;
+@{
+    string id = Request.Query["id"];
+    try
+    {
+        string constring = "Data Source=WA-MUTEZINTARE\\SQLEXPRESS;Initial Catalog=healthcare;Integrated Security=True";
+        using (SqlConnection con = new SqlConnection(constring))
+        {
+            con.Open();
+            string querry = "DELETE FROM Patients WHERE id=@id";
+            using (SqlCommand cmd = new SqlCommand(querry, con))
+            {
+                cmd.Parameters.AddWithValue("@id", id);
+
+                cmd.ExecuteNonQuery();
+            }
+
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("error" + ex.Message);      
+    }
+    Response.Redirect("/PATIENT/Index");
+}

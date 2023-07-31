@@ -1,0 +1,36 @@
+﻿@page
+@model healthcareinsurenc.Pages.RECORD.IndexModel
+@{
+}
+<br />
+<h2>Patient Records</h2>
+<table class="table">
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>Details</td>
+			<td>Patient</td>
+			<td>Date Registered</td>
+			<td>Actions</td>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var record in Model.recordsList)
+		{
+			<tr>
+				<td>@record.record_id</td>
+				<td>@record.record_details</td>
+				<td>@record.patient_id</td>
+				<td>@record.recorded_date</td>
+
+				<td>					
+					<a class="btn btn-outline-primary" href="/PATIENT/edit?id=@record.record_id">edit  </a>
+					<a class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete: @record.record_id')" href="/PATIENT/delete?id=@record.record_id">delete</a>
+				</td>
+
+			</tr>
+		}
+	</tbody>
+</table>
+
+<a class="btn btn-success" href="/RECORD/create">New Record</a>

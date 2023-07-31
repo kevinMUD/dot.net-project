@@ -1,0 +1,44 @@
+﻿@page
+@model healthcareinsurenc.Pages.RECORD.createModel
+@{
+}
+@if (Model.errorMessage.Length > 0)
+{
+	<div class="alert alert-danger alert-dismissible fade show" role="alert">
+		<strong>@Model.errorMessage</strong>
+		<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismissible="alert" aria-label="close"></button>
+	</div>
+}
+
+<form method="POST">
+	<div class="row mb-3">
+		<label class="col-form-label col-sm-3">Record Details</label>
+		<div class="col-sm-6">
+			<textarea type="text" class="form-control" name="details" value="@Model.rec.record_details"></textarea>
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-form-label col-sm-3">Patient</label>
+		<div class="col-sm-6">
+			<select class="form-select" name="patient" aria-label="Default select example">
+				<option selected>Select Patient...</option>
+				@foreach (var patient in Model.patientList)
+				{
+					<option value="@patient.id">@patient.id - @patient.name</option>
+				}
+			</select>
+		</div>
+	</div>
+
+	<div class="offset-sm-3 col-sm-3 d-grid">
+		<button type="submit" class="btn btn-success"> Create Record</button>
+	</div>
+
+	@if (Model.successMessage.Length > 0)
+	{
+		<div class="alert alert-success alert-dismissible fade show" role="alert">
+			<strong>@Model.successMessage</strong>
+			<button type="button" class="btn-close" data-bs-dismissible="alert" aria-label="close"></button>
+		</div>
+	}
+</form>

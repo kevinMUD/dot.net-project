@@ -1,0 +1,56 @@
+﻿@page
+@model healthcareinsurenc.Pages.PATIENT.createModel
+@{
+}
+<br />
+<h2> NEW PATIENT RECORD</h2>
+@if( Model.errormessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errormessage</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+}
+<form method="post">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="name" value="@Model.pinfo.name" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Email</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="email" value="@Model.pinfo.email" />
+        </div>
+    </div> 
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Phone</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="phone" value="@Model.pinfo.phone" />
+        </div>
+    </div> 
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Address</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="address" value="@Model.pinfo.address" />
+        </div>
+    </div>
+    
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            @if (Model.successmessage.Length > 0)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>@Model.successmessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                </div>
+            }
+      </div>
+      <div class="offset-sm-3 col-sm-3 d-grid">
+          <a class="btn btn-outline-primary" href="/" role="button">cancel</a>
+      </div>
+    </div>
+
+</form>
